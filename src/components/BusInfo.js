@@ -2,13 +2,14 @@ import React from 'react';
 
 const BusInfo = (props) => {
   return(
-      <div className="list-group">
-         {console.log(props)}
-          <ul>
-              <li>{props.routeVariant}</li>
-          </ul>
 
-      </div>
+              <tr>
+                  <td>{props.busId}</td>
+                  <td>{props.routeVariant}</td>
+                  <td>{props.deviationFromTimetable}</td>
+              </tr>
+
+
   )
 };
 
