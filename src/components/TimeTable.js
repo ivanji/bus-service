@@ -2,13 +2,12 @@ import React from 'react';
 import BusOrg from './BusOrg';
 
 const TimeTable = (props) => {
-    return(<div className="product-showcase-wrapper">
-                <div className="product-showcase">
+    return(<div>
+
                     {
                     props.busData.map((bus,i) =>
                             <BusOrg key={i} {...bus} />)
                     }
-                </div>
             </div>
         )
 };

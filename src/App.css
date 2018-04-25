@@ -1,3 +1,15 @@
-.bus-route::first-word {
-  font-weight: bold;
+.panel-heading:hover {
+    cursor: pointer;
+}
+
+.bus-status {
+    color:green;
+}
+
+.status-late {
+    color:red;
+}
+
+.status-early {
+    color: blue;
 }

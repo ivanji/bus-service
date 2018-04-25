@@ -6,6 +6,6 @@ const NoResults = props => {
             No Results currently available
         </p>
     )
-}
+};
 
 export default NoResults;
