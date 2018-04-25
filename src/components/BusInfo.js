@@ -4,9 +4,9 @@ const BusInfo = (props) => {
   return(
 
               <tr>
-                  <td>{props.busId}</td>
-                  <td>{props.routeVariant}</td>
-                  <td>{props.deviationFromTimetable}</td>
+                  <td className="bus-id">{props.busId}</td>
+                  <td className="bus-route">{props.routeVariant}</td>
+                  <td className="bus-status">{props.deviationFromTimetable}</td>
               </tr>
 
 

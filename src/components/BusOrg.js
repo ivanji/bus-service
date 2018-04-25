@@ -3,10 +3,12 @@ import BusInfo from "./BusInfo";
 import Notes from './Notes';
 
 const BusOrg = (props) => {
+    const date = new Date().toJSON().slice(0,10).split('-').reverse().join('/');
+    console.log(date);
     return(
         <React.Fragment>
 
-            <h2> { props.organisation}</h2>
+            <h2> { props.organisation} - {date}</h2>
 
             <div className="table-responsive">
 
