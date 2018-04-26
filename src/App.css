@@ -13,3 +13,16 @@
 .status-early {
     color: blue;
 }
+
+.caret {
+    float: right;
+    margin-top: 10px;
+
+}
+
+.is-open .caret {
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top-width: 0;
+    border-bottom: 4px solid #000000;
+}

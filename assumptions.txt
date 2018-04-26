@@ -1,0 +1,8 @@
+Thanks for the opportunity to present to you this mini-app.
+
+It's a responsive web app created using ReactJS.  In this application I decided to use Redux for state management to allow for it be extended.
+
+The data manipulation task was handled by simple functions which in a production environment would normally be handled by selectors.
+
+All instructions were clear and no real assumptions were made.
+

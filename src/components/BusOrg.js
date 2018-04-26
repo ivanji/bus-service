@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Collapsible from 'react-collapsible';
 import BusInfo from "./BusInfo";
 import Notes from './Notes';
 
@@ -9,32 +10,34 @@ const BusOrg = (props) => {
     return(
         <React.Fragment>
 
+                    <Collapsible trigger={<div className="panel panel-default">
+                        <div className="panel-heading" aria-expanded="false">
+                            { props.organisation + ' - ' + date}
+                            <span className="caret"></span>
+                        </div></div>}>
 
+                        <div className="table-responsive panel-body">
 
-                    <h2 className="panel-heading"> { props.organisation} - {date}</h2>
+                            <table className="table table-responsive table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Bus ID</th>
+                                    <th>Route Variant</th>
+                                    <th>Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
 
-                    <div className="table-responsive panel-body">
+                                {
+                                    props.busData.map((bus,i) =>
+                                        <BusInfo key={i} {...bus} />)
+                                }
+                                </tbody>
+                            </table>
 
-                        <table className="table table-responsive table-striped">
-                            <thead>
-                            <tr>
-                                <th>Bus ID</th>
-                                <th>Route Variant</th>
-                                <th>Status</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            {
-                                props.busData.map((bus,i) =>
-                                    <BusInfo key={i} {...bus} />)
-                            }
-                            </tbody>
-                        </table>
-
-                        <Notes label={props} />
-                    </div>
-
+                            <Notes label={props} />
+                        </div>
+                  </Collapsible>
 
 
 

@@ -13,11 +13,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {
-            this.props.timetable.length > 0 ?
-          <TimeTable busData={this.props.timetable} /> :
-          <NoResults />
-        }
+          <h1>Bus Reports</h1>
+            {
+                this.props.timetable.length > 0 ?
+                  <TimeTable busData={this.props.timetable} /> :
+                  <NoResults />
+            }
       </div>
     );
   }
