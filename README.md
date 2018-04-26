@@ -3,6 +3,7 @@ Small ReactJS App to display bus services information
 
 
 <h2> Quick Overview</h2>
+
 ```npm install```
 
 ```npm start or yarn start```
